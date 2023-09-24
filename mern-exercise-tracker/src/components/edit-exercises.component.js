@@ -29,7 +29,7 @@ export default class EditExercise extends Component {
     console.log(this.props);
 
     axios
-      .get("http://localhost:5000/exercises/" + this.props.match.params.id)
+      .get("http://localhost:5000/update/" + this.props.match.params.id)
       .then((res) => {
         this.setState({
           username: res.data.username,

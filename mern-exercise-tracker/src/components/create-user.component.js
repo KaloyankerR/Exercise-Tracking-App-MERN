@@ -26,8 +26,6 @@ export default class CreateUser extends Component {
       username: this.state.username,
     };
 
-    console.log(user);
-
     axios
       .post("http://localhost:5000/users/add", user)
       .then((res) => console.log(res.data));
@@ -52,7 +50,6 @@ export default class CreateUser extends Component {
             />
           </div>
           <div>
-            {/* <button type="submit">Create User</button> */}
             <input
               type="submit"
               value="Create User"

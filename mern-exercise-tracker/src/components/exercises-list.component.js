@@ -10,7 +10,7 @@ const Exercise = (props) => (
     <td>{props.exercise.date.substring(0, 10)}</td>
     <td>
       {/* eslint-disable jsx-a11y/anchor-is-valid */}
-      <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
+      <Link to={"/update/"+props.exercise._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
       {/* eslint-enable jsx-a11y/anchor-is-valid */}
     </td>
   </tr>
